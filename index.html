@@ -2,16 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Reservas</title>
-</head>
-<body style="background-color: rgb(102, 118, 166);">
-    
-    <p style="color:rgb(238, 208, 38) ; font-size: 1cm; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; "><b>Reservas:</b></p>
-
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="asset.js"></script>
+    <title>Sistema de reservas</title>
+
     
+</head>
+<body>
+    <div class="conte">Sistema de Reservas:</div>
+    <div class="conte2">  
+    <label for="Nombre">Restaurante:</label>
+    <input type="text" id="Nombre">
+    <label for="Horario">Hora y Fecha:</label>
+    <input type="datetime-local" id="Horario">
+    <label for="Personas">Cant. Personas:</label>
+    <input type="text" id="Personas"> <br/>
+    <input type="button" onclick="add();" value="Reservar">
+    <input type="button" onclick="PrintData();" value="Mostrar Reservas Activas">
+    <br/> RESERVAS ACTIVAS <br/>
+    <div class="conte2">
+        <table id="output">
+            <thead><td></td></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    </div>
+
 </body>
 
 </html>
